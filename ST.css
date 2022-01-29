@@ -71,7 +71,7 @@ body{
     left: 60%;
     transform: translate(-90% , -60%);
 }
-@media(max-width:720px){
+@media(max-width:376px){
     .card{
         width: 300px;
         height:fit-content;
