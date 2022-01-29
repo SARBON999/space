@@ -1,0 +1,121 @@
+@font-face {
+    font-family:Inter;
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+.card{
+    background-color: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    height: 360px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 2%;   
+}
+.texts{
+    border-radius: 2%;
+    padding: 50px;
+}
+
+.photo{
+    width: 1000px;
+    height: 360px;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url(images/image-header-desktop.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.texts h2{
+    font-weight: 700;
+    font-size: 2.1em;
+    word-spacing: 2px;
+    margin: 20px 0 20px 0;
+}
+.texts  h2 span{
+    color: hsl(277, 64%, 61%);
+}
+.texts h3{
+    font-weight: 400;
+    font-size: .8em;
+    margin: 20px 0 40px 0 ;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 20px;
+}
+.statistc{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.statistc span{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: .6em;
+}
+.attribution{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-90% , -60%);
+}
+@media(max-width:375px){
+    .card{
+        width: 300px;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .photo{
+        width:auto;
+        height: 215px;
+    }
+    .texts{
+        padding: 25px;
+    }
+    .texts h2{
+        font-size: 1.9em;
+        text-align: center;
+    }
+    .texts h2{
+        text-align: center;
+    }
+    .photo{
+        order: -1;
+        border-radius: 3% 3% 0 0;
+    }
+    .statistc{
+       display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .statistc div{
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+    .statistc span{
+        font-size: .8em;
+        letter-spacing: 1px;
+    }
+    .attribution{
+        bottom: 85px;
+        left: 237px;
+        margin-top: 81px;
+    }
+
+
+    
+}
